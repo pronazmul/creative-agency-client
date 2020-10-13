@@ -1,0 +1,16 @@
+Project installation Done
+Bootstrap Insatallation Done
+FontAwesome Insatallation Done
+Router Insatallation Done
+
+Main Page Done to controll All Router
+
+Navbar Script: 
+
+{
+    loggedInUser.isSignIn  ?
+        <li class="nav-item">
+            <Link class="nav-link btn btn-warning mr-4" onClick={()=>setLoggedInUser({})} to='/login'>Logout</Link>
+        </li>
+    :  
+}
