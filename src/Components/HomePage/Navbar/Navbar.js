@@ -24,13 +24,13 @@ const Navbar = () => {
                                 <Link className="nav-link mr-4" to="#">Our Portfolio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link mr-4" to="#">Our Team</Link>
+                                <Link className="nav-link mr-4" to="/userDashboard">USER|DASHBOARD</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link mr-4" to="#">Contact Us</Link>
+                                <Link className="nav-link mr-4" to="/adminDashboard">ADMIN|DASHBOARD</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link mr-4 btn btn-dark text-light px-5" to='/login'>Login</Link>
+                                <Link className="nav-link mr-4 btn btn-dark text-light px-5" to='/userlogin'>Login</Link>
                             </li>                  
                             
                         </ul>

@@ -7,7 +7,7 @@ import airbnbImg from '../../../images/logos/airbnb.png'
 
 const TrustedByCompanies = () => {
     return (
-        <div className="container-fluid">
+        <div style={{marginBottom:'100px'}} className="container-fluid">
             <div className="container">
                 <div className="row d-flex flex-row align-items-center justify-content-between">
                     <div className="col-md-2 col-sm-6">
