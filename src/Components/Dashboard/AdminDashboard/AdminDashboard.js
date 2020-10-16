@@ -8,6 +8,7 @@ import ServiceStatus from './ServiceStatus'
 import AddService from './AddService'
 
 const AdminDashboard = () => {
+    document.title='ADMIN | DASHBOARD'
     const [Component, setComponent] = useState('serviceStatus')
 
     return (
