@@ -1,14 +1,14 @@
 import React, { createContext, useState } from 'react'
 import HomePage from '../HomePage/HomePage'
 import UserLogin from '../Login/UserLogin'
-import AdminLogin from '../Login/AdminLogin'
+import AdminSubscribe from '../Login/AdminSubscribe'
+import ProtectedRoute from '../Login/ProtectedRoute'
 import {
     BrowserRouter as Router,
     Switch,
     Route, Redirect
 } from "react-router-dom"
-import AdminDashboard from '../Dashboard/AdminDashboard/AdminDashboard'
-import UserDashboard from '../Dashboard/UserDashboard/UserDashboard'
+import Dashboard from '../Dashboard/Dashboard'
 
 export const userContex = createContext()
 
@@ -18,7 +18,6 @@ const Main = () => {
         <userContex.Provider value={[loggedInUser, setLoggedInUser]}>
             <Router>
                 <Switch>
-
                     <Route exact path='/'>
                         <HomePage></HomePage>
                     </Route>
@@ -27,21 +26,13 @@ const Main = () => {
                         <UserLogin></UserLogin>
                     </Route>
 
-                    <Route path='/adminlogin'>
-                        <AdminLogin></AdminLogin>
+                    <Route path='/AdminSubscribe'>
+                        <AdminSubscribe></AdminSubscribe>
                     </Route>
 
-                    <Route path='/userDashboard'>
-                        <UserDashboard></UserDashboard>
-                    </Route>
-
-                    <Route path='/adminDashboard'>
-                        <AdminDashboard></AdminDashboard>
-                    </Route>
-
-                    {/*<ProtectedRoute path='/appoinment'>
-                        <AppoinmentPage></AppoinmentPage>
-                    </ProtectedRoute> */}
+                    <ProtectedRoute path='/dashboard/:key?'>
+                        <Dashboard></Dashboard>
+                    </ProtectedRoute>
 
                     <Route path='*'>
                         <Redirect to="/" />

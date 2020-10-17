@@ -13,7 +13,6 @@ const AddService = () => {
         setFile(image)
     }
     const handleForm = (e) => {
-        // Prevent AutoLoad
         e.preventDefault()
 
         let formData = new FormData()  
@@ -26,9 +25,12 @@ const AddService = () => {
         fetch(url,{
             method:'POST',
             body: formData
-        })
-
-       }
+        }).then(res=> res.json())
+        .then(data=> {
+            alert('Service added Successfully')
+            })
+        e.target.reset()        
+    }
     
     return (
         <div style={{ borderRadius: '20px' }} className="container bg-light mt-3 p-5">

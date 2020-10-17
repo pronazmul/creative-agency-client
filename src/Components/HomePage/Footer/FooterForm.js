@@ -11,7 +11,7 @@ const FooterForm = () => {
                 <div className="col-md-6 col-sm-12">
                     <input className='form-control mb-4' placeholder='Your Email' type="text"/>
                     <input className='form-control mb-4' placeholder='Company Name/Organization' type="text"/>
-                    <textarea class="form-control" placeholder="Your Message Here" rows="4"></textarea>
+                    <textarea className="form-control" placeholder="Your Message Here" rows="4"></textarea>
                     <button className='btn btn-dark text-light px-5 mt-4'>SEND</button>
                 </div>
             </div>

@@ -25,5 +25,9 @@
     padding-top: 200px;
 }
 .copyrightSpace{ margin-top: 70px;}
-
-
+  
+.zoom:hover{
+    transform: scale(1.1) !important; 
+    transition: .5s ease;
+    cursor: pointer;
+}

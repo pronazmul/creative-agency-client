@@ -1,4 +1,5 @@
 const firebaseConfig = {
+  
     apiKey: "AIzaSyAeJNIp8ga4aFySqy7OlsMO4gaYdpuRVFE",
     authDomain: "creative-agency-mern.firebaseapp.com",
     databaseURL: "https://creative-agency-mern.firebaseio.com",
