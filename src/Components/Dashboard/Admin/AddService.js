@@ -20,7 +20,7 @@ const AddService = () => {
         formData.append('title', info.title)
         formData.append('description', info.description)
 
-        const url = 'http://localhost:5000/addService'
+        const url = 'https://serene-beyond-95507.herokuapp.com/addService'
         
         fetch(url,{
             method:'POST',

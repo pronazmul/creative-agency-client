@@ -6,7 +6,7 @@ const Order = () => {
     const [selectedOrder, setSelectedOrder] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/selectedService/${key}`)
+        fetch(`https://serene-beyond-95507.herokuapp.com/selectedService/${key}`)
             .then(res => res.json())
             .then(data => setSelectedOrder(data))
     }, [key])
@@ -21,7 +21,7 @@ const handleBlur =(e)=>{
 const handleForm =(e)=>{
     e.preventDefault()
 
-    const url = 'http://localhost:5000/addOrder'
+    const url = 'https://serene-beyond-95507.herokuapp.com/addOrder'
         
         fetch(url,{
             method:'POST',

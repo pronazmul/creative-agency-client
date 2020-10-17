@@ -7,7 +7,7 @@ const ServiceList = () => {
 
     useEffect(() => { 
 
-        fetch('http://localhost:5000/allOrder')
+        fetch('https://serene-beyond-95507.herokuapp.com/allOrder')
             .then(res => res.json())
             .then(data => setServiceData(data))
 

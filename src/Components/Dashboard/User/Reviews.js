@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
         formData.append('company', review.company)
         formData.append('review', review.review)
 
-        const url = 'http://localhost:5000/addReview'
+        const url = 'https://serene-beyond-95507.herokuapp.com/addReview'
         
         fetch(url,{
             method:'POST',

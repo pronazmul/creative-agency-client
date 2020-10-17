@@ -4,14 +4,14 @@ const ServiceStatus = () => {
 const [serviceData, setServiceData] = useState([])
 
 useEffect(() => {
-    const url = 'http://localhost:5000/allOrder'
+    const url = 'https://serene-beyond-95507.herokuapp.com/allOrder'
     fetch(url)
         .then(res => res.json())
         .then(data => setServiceData(data))
 }, [])
 const handleChange =(id)=>{
     const status = document.getElementById('status').value
-    fetch(`http://localhost:5000/updateStatus/${id}`,{
+    fetch(`https://serene-beyond-95507.herokuapp.com/updateStatus/${id}`,{
         method:'PATCH',
         headers:{'Content-Type':'application/json'},
         body: JSON.stringify({updatedStatus:status})

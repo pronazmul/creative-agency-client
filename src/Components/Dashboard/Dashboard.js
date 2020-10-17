@@ -14,7 +14,7 @@ const Dashboard = () => {
     const [UserComponent, setUserComponent] = useState('order')
     
     useEffect(() => {
-        fetch(`http://localhost:5000/findAdmin/${loggedInUser.email}`)
+        fetch(`https://serene-beyond-95507.herokuapp.com/findAdmin/${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data))
     },[])

@@ -5,7 +5,7 @@ const Feedback = () => {
     const [review, setReview] = useState([])
 
     useEffect(()=>{
-        const url ='http://localhost:5000/allReviews'
+        const url ='https://serene-beyond-95507.herokuapp.com/allReviews'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setReview(data))

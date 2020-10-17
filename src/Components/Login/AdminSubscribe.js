@@ -12,7 +12,7 @@ const handleSubmit = (e)=>{
     e.preventDefault()
     const adminEmail = document.getElementById('email').value
 
-    fetch(`http://localhost:5000/makeAdmin`,{
+    fetch(`https://serene-beyond-95507.herokuapp.com/makeAdmin`,{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body: JSON.stringify({email:adminEmail})
