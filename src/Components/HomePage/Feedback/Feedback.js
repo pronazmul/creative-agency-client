@@ -21,7 +21,7 @@ const Feedback = () => {
                                <div className="card-body">
                                    <div className="row mb-4 d-flex flex-row align-items-center">
                                        <div className="col-md-4">
-                                            <img src={`data:image/png;base64,${data.image.name}`} height='100' alt=""/>
+                                            <img src={`data:image/png;base64,${data.image.name}`} height='100' width='100' alt=""/>
                                        </div>
                                        <div className="col-md-8">
                                             <h4 className=' ml-3'>{data.name}</h4>

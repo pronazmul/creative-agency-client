@@ -18,7 +18,7 @@ const ServiceList = () => {
             <div className="row p-4">
                 {serviceData.map(data=>
                     <div key={data.title} className="col-md-6">
-                        <div style={{ borderRadius: '20px' }} className="card px-3 py-3 px-3">
+                        <div style={{ borderRadius: '20px' }} className="card px-3 py-3 my-3">
                             <div className="card-body">
                                 <div className="row d-flex flex-row justify-content-between align-items-center mb-4">
                                     <img height='70' src={`data:image/png;base64,${data.image.name}`} alt=""/>

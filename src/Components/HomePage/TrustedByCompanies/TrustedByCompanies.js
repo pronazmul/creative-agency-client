@@ -10,19 +10,19 @@ const TrustedByCompanies = () => {
         <div style={{marginBottom:'100px'}} className="container-fluid">
             <div className="container">
                 <div className="row d-flex flex-row align-items-center justify-content-between">
-                    <div className="col-md-2 col-sm-6">
+                    <div className=" col-lg-2 col-md-6 col-sm-12">
                         <img src={googleImg} className='img-fluid' alt="" />
                     </div>
-                    <div className="col-md-2 col-sm-6">
+                    <div className=" col-lg-2 col-md-6 col-sm-12">
                         <img src={netflixImg} className='img-fluid' alt="" />
                     </div>
-                    <div className="col-md-2 col-sm-6">
+                    <div className=" col-lg-2 col-md-6 col-sm-12">
                         <img src={slackImg} className='img-fluid' alt="" />
                     </div>
-                    <div className="col-md-2 col-sm-6">
+                    <div className=" col-lg-2 col-md-6 col-sm-12">
                         <img src={uberImg} className='img-fluid' alt="" />
                     </div>
-                    <div className="col-md-2 col-sm-6">
+                    <div className=" col-lg-2 col-md-6 col-sm-12">
                         <img src={airbnbImg} className='img-fluid' alt="" />
                     </div>
                 </div>

@@ -23,7 +23,7 @@ const Services = () => {
                             <Link className='text-decoration-none' to={`/dashboard/${data._id}`}>
                                 <div className="card border-0 shadow zoom">
                                     <div className="card-body">
-                                        <img src={`data:image/png;base64,${data.image.name}`} height='100' className='d-block mx-auto' alt="" />
+                                        <img src={`data:image/png;base64,${data.image.name}`} height='100' width='100' className='d-block mx-auto' alt="" />
                                         <h4 className='text-center my-3'>{data.title}</h4>
                                         <p className='text-secondary text-center'>{data.description}</p>
                                     </div>
