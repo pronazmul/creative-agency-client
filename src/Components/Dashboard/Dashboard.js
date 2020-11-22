@@ -30,7 +30,7 @@ const Dashboard = () => {
                 {/* Dashboard Body */}
                 {isAdmin ? <DashboardBody Component={AdminComponent}></DashboardBody> : <DashboardBody Component={UserComponent}></DashboardBody>}
             </div>
-        </div>
+        </div> 
     );
 };
 
