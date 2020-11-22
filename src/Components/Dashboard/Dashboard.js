@@ -7,7 +7,7 @@ import { userContex } from '../Main/Main';
 import { useEffect } from 'react';
 
 const Dashboard = () => {
-    document.title = 'DASHBOARD'
+    document.title = 'DASHBOARD' 
     const [loggedInUser, setLoggedInUser] = useContext(userContex)
     const [isAdmin, setAdmin] = useState(false)
     const [AdminComponent, setAdminComponent] = useState('serviceStatus')
